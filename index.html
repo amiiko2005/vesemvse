@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="description" content="Грузовое такси — быстрая и надёжная перевозка грузов. Опытные водители, современный автопарк, работаем по городу и области.">
+  <title>Везём всё — грузовое такси</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="#" class="logo">
+        <img src="assets/logo.png" alt="Везём всё" class="logo__img">
+      </a>
+      <nav class="nav" id="nav">
+        <a href="#advantages">Преимущества</a>
+        <a href="#services">Услуги</a>
+        <a href="#gallery">Галерея</a>
+        <a href="#fleet">Автопарк</a>
+        <a href="#game">Игра</a>
+        <a href="#reviews">Отзывы</a>
+        <a href="#faq">Вопросы</a>
+        <a href="#contacts">Контакты</a>
+        <div class="header__actions header__actions--mobile">
+          <a href="tel:+79001234567" class="header__phone">+7 (900) 123-45-67</a>
+          <div class="header__messengers">
+            <a href="https://t.me/gruztaxi" class="header__btn header__btn--telegram" target="_blank" rel="noopener" aria-label="Telegram">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M2.01 21 23 12 2.01 3 2 10l15 2-15 2z"/></svg>
+            </a>
+            <a href="https://max.ru/u/gruztaxi" class="header__btn header__btn--max" target="_blank" rel="noopener" aria-label="MAX">MAX</a>
+          </div>
+        </div>
+      </nav>
+      <div class="header__actions header__actions--desktop">
+        <a href="tel:+79001234567" class="header__phone">+7 (900) 123-45-67</a>
+        <div class="header__messengers">
+          <a href="https://t.me/gruztaxi" class="header__btn header__btn--telegram" target="_blank" rel="noopener" aria-label="Telegram">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M2.01 21 23 12 2.01 3 2 10l15 2-15 2z"/></svg>
+          </a>
+          <a href="https://max.ru/u/gruztaxi" class="header__btn header__btn--max" target="_blank" rel="noopener" aria-label="MAX">MAX</a>
+        </div>
+      </div>
+      <button class="burger" id="burger" aria-label="Меню">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+  <div class="nav-backdrop" id="navBackdrop" aria-hidden="true"></div>
+
+  <section class="hero" id="hero">
+    <video class="hero__video" autoplay muted loop playsinline poster="">
+      <source src="assets/hero.mp4?v=4" type="video/mp4">
+    </video>
+    <div class="hero__overlay"></div>
+    <div class="hero__content">
+      <p class="hero__badge">Грузовое такси 24/7</p>
+      <h1 class="hero__title">Перевозим грузы<br><span>быстро и аккуратно</span></h1>
+      <p class="hero__subtitle">Квартирные и офисные переезды, доставка мебели, стройматериалов и техники. Приедем в удобное для вас время.</p>
+      <div class="hero__actions">
+        <a href="tel:+79001234567" class="btn btn--primary">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          Позвонить
+        </a>
+        <a href="https://t.me/gruztaxi" class="btn btn--outline" target="_blank" rel="noopener">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>
+          Telegram
+        </a>
+        <a href="https://max.ru/u/gruztaxi" class="btn btn--outline" target="_blank" rel="noopener">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 15v-4H8l4-7v4h3l-4 7z"/></svg>
+          MAX
+        </a>
+      </div>
+      <div class="hero__stats">
+        <div class="hero__stat">
+          <strong>10+</strong>
+          <span>лет опыта</span>
+        </div>
+        <div class="hero__stat">
+          <strong>5000+</strong>
+          <span>перевозок</span>
+        </div>
+        <div class="hero__stat">
+          <strong>24/7</strong>
+          <span>на связи</span>
+        </div>
+      </div>
+    </div>
+    <a href="#advantages" class="hero__scroll" aria-label="Прокрутить вниз">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M19 12l-7 7-7-7"/></svg>
+    </a>
+  </section>
+
+  <section class="section advantages" id="advantages">
+    <div class="container">
+      <div class="section__header">
+        <h2 class="section__title">Наши преимущества</h2>
+        <p class="section__desc">Работаем честно, приезжаем вовремя и бережно относимся к каждому грузу</p>
+      </div>
+      <div class="advantages__grid">
+        <article class="advantage-card">
+          <div class="advantage-card__icon">⏱️</div>
+          <h3>Быстрая подача</h3>
+          <p>Машина приедет в течение 20 минут после звонка или сообщения. Работаем без выходных и праздников.</p>
+        </article>
+        <article class="advantage-card">
+          <div class="advantage-card__icon">🛡️</div>
+          <h3>Бережная перевозка</h3>
+          <p>Используем ремни, плёнку и мягкие крепления. Грузчики аккуратно упакуют и перенесут вещи.</p>
+        </article>
+        <article class="advantage-card">
+          <div class="advantage-card__icon">👨‍✈️</div>
+          <h3>Опытные водители</h3>
+          <p>Все водители с большим стажем, знают город и умеют работать в стеснённых условиях двора и подъезда.</p>
+        </article>
+        <article class="advantage-card">
+          <div class="advantage-card__icon">🚚</div>
+          <h3>Современный автопарк</h3>
+          <p>Газели, фургоны и грузовики разной грузоподъёмности — подберём машину под ваш объём.</p>
+        </article>
+        <article class="advantage-card">
+          <div class="advantage-card__icon">📍</div>
+          <h3>По городу и области</h3>
+          <p>Доставляем грузы по всему городу, в ближайшие районы и междугородние маршруты.</p>
+        </article>
+        <article class="advantage-card">
+          <div class="advantage-card__icon">💬</div>
+          <h3>Удобная связь</h3>
+          <p>Свяжитесь с нами по телефону, в Telegram или MAX — ответим быстро и проконсультируем.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section services" id="services">
+    <div class="container">
+      <div class="section__header">
+        <h2 class="section__title">Наши услуги</h2>
+        <p class="section__desc">Полный спектр грузовых перевозок для частных лиц и бизнеса</p>
+      </div>
+      <div class="services__grid">
+        <article class="service-card">
+          <h3>Квартирный переезд</h3>
+          <p>Переезд «под ключ»: упаковка, погрузка, перевозка и разгрузка. Работаем с любым этажом.</p>
+        </article>
+        <article class="service-card">
+          <h3>Офисный переезд</h3>
+          <p>Перевезём мебель, технику и документы. Минимизируем простой вашего бизнеса.</p>
+        </article>
+        <article class="service-card">
+          <h3>Доставка мебели</h3>
+          <p>Заберём из магазина или склада и доставим домой. Поднимем на этаж и соберём при необходимости.</p>
+        </article>
+        <article class="service-card">
+          <h3>Стройматериалы</h3>
+          <p>Доставка кирпича, плитки, мешков, досок и других материалов на объект.</p>
+        </article>
+        <article class="service-card">
+          <h3>Вывоз мусора</h3>
+          <p>Вывезем строительный и бытовой мусор после ремонта или генеральной уборки.</p>
+        </article>
+        <article class="service-card">
+          <h3>Межгород</h3>
+          <p>Грузоперевозки в соседние города и области. Надёжно и в согласованные сроки.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section game-section" id="game">
+    <div class="container">
+      <div class="section__header">
+        <h2 class="section__title game-section__title">
+          <span>Мини-игра</span>
+          <span>Упакуй Газель</span>
+        </h2>
+        <p class="section__desc">Смотрите в кузов Газели сбоку и укладывайте груз: коробки, мебель и техника падают сверху — как в тетрисе.</p>
+        <p class="game__promo">
+          <span class="game__promo-icon" aria-hidden="true">🎁</span>
+          Наберите <strong>999 очков</strong> — и получите <strong>скидку 5%</strong> на перевозку.
+          Сделайте скриншот экрана с наградой и отправьте нам при заказе.
+        </p>
+      </div>
+      <div class="game">
+        <div class="game__wrap">
+          <div class="game__hud">
+            <div class="game__stats">
+              <div class="game__stat">
+                <span class="game__stat-label">Очки</span>
+                <strong id="gameScore">0</strong>
+              </div>
+              <div class="game__stat">
+                <span class="game__stat-label">Ряды</span>
+                <strong id="gameLines">0</strong>
+              </div>
+              <div class="game__stat">
+                <span class="game__stat-label">Уровень</span>
+                <strong id="gameLevel">1</strong>
+              </div>
+            </div>
+            <div class="game__next">
+              <span class="game__stat-label">Следующий</span>
+              <canvas id="gameNext" width="120" height="120" aria-hidden="true"></canvas>
+              <p id="gameNextName">—</p>
+            </div>
+          </div>
+          <div class="game__arena">
+            <canvas id="gameCanvas" aria-label="Игра Упакуй Газель"></canvas>
+            <div class="game__overlay" id="gameOverlay">
+              <div class="game__overlay-box">
+                <div class="game__reward" id="gameReward" hidden>
+                  <span class="game__reward-badge">−5%</span>
+                  <p class="game__reward-note">Скидка на перевозку</p>
+                </div>
+                <h3 id="gameOverlayTitle">Упакуй Газель!</h3>
+                <p id="gameOverlayText"></p>
+                <button type="button" class="btn btn--primary" id="gameStartBtn">Начать игру</button>
+              </div>
+            </div>
+          </div>
+          <div class="game__bottom">
+            <ul class="game__legend">
+              <li><span>🛏️</span> Кровать</li>
+              <li><span>📦</span> Коробка</li>
+              <li><span>🗄️</span> Шкаф</li>
+              <li><span>🛋️</span> Диван</li>
+              <li><span>🪑</span> Комод</li>
+              <li><span>🪵</span> Стол</li>
+              <li><span>📺</span> Техника</li>
+            </ul>
+            <p class="game__hint">← → двигать · ↑ поворот · ↓ ускорить · Пробел — сброс · P — пауза</p>
+          </div>
+          <div class="game__touch" id="gameTouch">
+            <p class="game__touch-hint">Свайпайте по полю или используйте кнопки</p>
+            <div class="game__touch-row">
+              <div class="game__touch-pad">
+                <button type="button" class="game__touch-btn game__touch-btn--rotate" data-game="rotate" aria-label="Поворот">↻</button>
+                <button type="button" class="game__touch-btn" data-game="left" aria-label="Влево">←</button>
+                <button type="button" class="game__touch-btn" data-game="down" aria-label="Вниз">↓</button>
+                <button type="button" class="game__touch-btn" data-game="right" aria-label="Вправо">→</button>
+              </div>
+              <div class="game__touch-side">
+                <button type="button" class="game__touch-btn game__touch-btn--drop" data-game="drop" aria-label="Сброс">Сброс</button>
+                <button type="button" class="game__touch-btn game__touch-btn--pause" data-game="pause" aria-label="Пауза">⏸</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section gallery" id="gallery">
+    <div class="container">
+      <div class="section__header">
+        <h2 class="section__title">Фотогалерея</h2>
+        <p class="section__desc">Реальные перевозки наших клиентов</p>
+      </div>
+      <div class="gallery__grid">
+        <div class="gallery__item gallery__item--wide">
+          <img src="https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?w=800&q=80" alt="Грузовик на загрузке" loading="lazy">
+        </div>
+        <div class="gallery__item">
+          <img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=600&q=80" alt="Погрузка коробок" loading="lazy">
+        </div>
+        <div class="gallery__item">
+          <img src="https://images.unsplash.com/photo-1566576721346-d4a3b4448a3e?w=600&q=80" alt="Переезд мебели" loading="lazy">
+        </div>
+        <div class="gallery__item">
+          <img src="https://images.unsplash.com/photo-1519003722824-194b4459a2fc?w=600&q=80" alt="Грузовой автомобиль" loading="lazy">
+        </div>
+        <div class="gallery__item gallery__item--wide">
+          <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=800&q=80" alt="Доставка на объект" loading="lazy">
+        </div>
+        <div class="gallery__item">
+          <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=600&q=80" alt="Команда грузчиков" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section fleet" id="fleet">
+    <div class="container">
+      <div class="section__header">
+        <h2 class="section__title">Автопарк</h2>
+        <p class="section__desc">Подберём машину под объём и тип вашего груза</p>
+      </div>
+      <div class="fleet__grid">
+        <article class="fleet-card">
+          <div class="fleet-card__image">
+            <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80" alt="Газель тент 1,5 тонны" loading="lazy">
+          </div>
+          <div class="fleet-card__body">
+            <h3>Газель (тент) 1,5 т</h3>
+            <ul>
+              <li>Длина: 3,0 м</li>
+              <li>Ширина: 2,0 м</li>
+              <li>Высота: 1,9 м</li>
+              <li>Грузоподъёмность: 1,5 т</li>
+            </ul>
+          </div>
+        </article>
+        <article class="fleet-card">
+          <div class="fleet-card__image">
+            <img src="https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?w=600&q=80" alt="Газель тент 3 тонны" loading="lazy">
+          </div>
+          <div class="fleet-card__body">
+            <h3>Газель (тент) 3 т</h3>
+            <ul>
+              <li>Длина: 4,2 м</li>
+              <li>Ширина: 2,1 м</li>
+              <li>Высота: 2,1 м</li>
+              <li>Грузоподъёмность: 3 т</li>
+            </ul>
+          </div>
+        </article>
+        <article class="fleet-card">
+          <div class="fleet-card__image">
+            <img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=600&q=80" alt="Грузовик 5 тонн" loading="lazy">
+          </div>
+          <div class="fleet-card__body">
+            <h3>Грузовик 5 т</h3>
+            <ul>
+              <li>Длина: 6,0 м</li>
+              <li>Ширина: 2,4 м</li>
+              <li>Высота: 2,3 м</li>
+              <li>Грузоподъёмность: 5 т</li>
+            </ul>
+          </div>
+        </article>
+        <article class="fleet-card">
+          <div class="fleet-card__image">
+            <img src="https://images.unsplash.com/photo-1519003722824-194b4459a2fc?w=600&q=80" alt="Воровайка с манипулятором" loading="lazy">
+          </div>
+          <div class="fleet-card__body">
+            <h3>Воровайка</h3>
+            <ul>
+              <li>Длина: 6,2 м</li>
+              <li>Ширина: 2,45 м</li>
+              <li>Грузоподъёмность: 10 т</li>
+              <li>Грузоподъёмность стрелы: 5 т</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section reviews" id="reviews">
+    <div class="container">
+      <div class="section__header">
+        <h2 class="section__title">Отзывы</h2>
+        <p class="section__desc">Нам доверяют частные клиенты и компании</p>
+      </div>
+      <div class="reviews__slider" id="reviewsSlider">
+        <div class="reviews__track" id="reviewsTrack">
+          <article class="review-card">
+            <div class="review-card__bubble">
+              <div class="review-card__stars">★★★★★</div>
+              <p class="review-card__text">«Переезжали двухкомнатную квартиру. Приехали точно в назначенное время, всё аккуратно упаковали и перевезли без единой царапины. Рекомендую!»</p>
+              <div class="review-card__author">
+                <div class="review-card__avatar">А</div>
+                <div>
+                  <strong>Алексей М.</strong>
+                  <span>Квартирный переезд</span>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="review-card">
+            <div class="review-card__bubble">
+              <div class="review-card__stars">★★★★★</div>
+              <p class="review-card__text">«Заказывали доставку мебели из IKEA. Водитель помог поднять на 5 этаж, всё собрали на месте. Очень вежливые и профессиональные ребята.»</p>
+              <div class="review-card__author">
+                <div class="review-card__avatar">Е</div>
+                <div>
+                  <strong>Елена К.</strong>
+                  <span>Доставка мебели</span>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="review-card">
+            <div class="review-card__bubble">
+              <div class="review-card__stars">★★★★★</div>
+              <p class="review-card__text">«Перевозили офис на новую площадь. Уложились в один день, техника и документы доставлены целыми. Отличная организация процесса.»</p>
+              <div class="review-card__author">
+                <div class="review-card__avatar">Д</div>
+                <div>
+                  <strong>Дмитрий В.</strong>
+                  <span>Офисный переезд</span>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="review-card">
+            <div class="review-card__bubble">
+              <div class="review-card__stars">★★★★★</div>
+              <p class="review-card__text">«Нужно было срочно вывезти строительный мусор после ремонта. Приехали через 40 минут, всё вывезли за один рейс. Спасибо за оперативность!»</p>
+              <div class="review-card__author">
+                <div class="review-card__avatar">О</div>
+                <div>
+                  <strong>Ольга С.</strong>
+                  <span>Вывоз мусора</span>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+        <div class="reviews__controls">
+          <button class="reviews__btn" id="prevReview" aria-label="Предыдущий отзыв">←</button>
+          <div class="reviews__dots" id="reviewDots"></div>
+          <button class="reviews__btn" id="nextReview" aria-label="Следующий отзыв">→</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section faq" id="faq">
+    <div class="container">
+      <div class="section__header">
+        <h2 class="section__title">Частые вопросы</h2>
+        <p class="section__desc">Ответы на популярные вопросы о наших перевозках</p>
+      </div>
+      <div class="faq__list">
+        <details class="faq__item">
+          <summary>Как быстро приедет машина?</summary>
+          <p>Обычно машина приезжает в течение 20 минут после звонка или сообщения. В часы пик время может немного увеличиться — мы предупредим заранее.</p>
+        </details>
+        <details class="faq__item">
+          <summary>Работаете ли вы в выходные и праздники?</summary>
+          <p>Да, мы работаем каждый день без выходных, включая праздничные дни. Связаться с нами можно в любое время.</p>
+        </details>
+        <details class="faq__item">
+          <summary>Есть ли грузчики?</summary>
+          <p>Да, по запросу предоставляем опытных грузчиков. Они помогут с погрузкой, разгрузкой и переносом тяжёлых предметов.</p>
+        </details>
+        <details class="faq__item">
+          <summary>Какую машину выбрать для переезда?</summary>
+          <p>Для однокомнатной квартиры подойдёт стандартная Газель, для двух- и трёхкомнатной — удлинённая. Проконсультируем по телефону или в мессенджере.</p>
+        </details>
+        <details class="faq__item">
+          <summary>Можно ли перевезти хрупкий груз?</summary>
+          <p>Конечно. Мы используем упаковочные материалы, ремни и мягкие крепления. Сообщите о хрупких предметах заранее — подготовимся.</p>
+        </details>
+        <details class="faq__item">
+          <summary>Как с вами связаться?</summary>
+          <p>Позвоните по телефону, напишите в Telegram или MAX — мы на связи и ответим в ближайшее время.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <section class="section contacts" id="contacts">
+    <div class="container">
+      <div class="section__header">
+        <h2 class="section__title">Контакты</h2>
+        <p class="section__desc">Выберите удобный способ связи — мы всегда на связи</p>
+      </div>
+      <div class="contacts__grid">
+        <div class="contacts__info">
+          <div class="contact-item">
+            <div class="contact-item__icon">📞</div>
+            <div>
+              <h3>Телефон</h3>
+              <a href="tel:+79001234567">+7 (900) 123-45-67</a>
+              <p>Звоните в любое время</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-item__icon">✈️</div>
+            <div>
+              <h3>Telegram</h3>
+              <a href="https://t.me/gruztaxi" target="_blank" rel="noopener">@gruztaxi</a>
+              <p>Напишите сообщение — ответим быстро</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-item__icon">💬</div>
+            <div>
+              <h3>MAX</h3>
+              <a href="https://max.ru/u/gruztaxi" target="_blank" rel="noopener">Везём всё в MAX</a>
+              <p>Удобный мессенджер для связи</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-item__icon">🕐</div>
+            <div>
+              <h3>Режим работы</h3>
+              <p class="contact-item__highlight">Круглосуточно, без выходных</p>
+            </div>
+          </div>
+        </div>
+        <div class="contacts__actions">
+          <h3>Свяжитесь с нами прямо сейчас</h3>
+          <p>Выберите удобный способ — позвоните или напишите в мессенджер</p>
+          <div class="contacts__buttons">
+            <a href="tel:+79001234567" class="contact-btn contact-btn--phone">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              Позвонить
+            </a>
+            <a href="https://t.me/gruztaxi" class="contact-btn contact-btn--telegram" target="_blank" rel="noopener">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>
+              Написать в Telegram
+            </a>
+            <a href="https://max.ru/u/gruztaxi" class="contact-btn contact-btn--max" target="_blank" rel="noopener">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 15v-4H8l4-7v4h3l-4 7z"/></svg>
+              Написать в MAX
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <a href="#" class="logo">
+        <span class="logo__icon">🚛</span>
+        <span class="logo__text">Везём всё</span>
+      </a>
+      <p class="footer__copy">© 2026 Везём всё. Грузовые перевозки по городу и области.</p>
+      <div class="footer__links">
+        <a href="tel:+79001234567">+7 (900) 123-45-67</a>
+        <a href="https://t.me/gruztaxi" target="_blank" rel="noopener">Telegram</a>
+        <a href="https://max.ru/u/gruztaxi" target="_blank" rel="noopener">MAX</a>
+      </div>
+    </div>
+  </footer>
+
+  <div class="floating-contacts" id="floatingContacts">
+    <a href="tel:+79001234567" class="floating-btn floating-btn--phone" aria-label="Позвонить">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+    </a>
+    <a href="https://t.me/gruztaxi" class="floating-btn floating-btn--telegram" target="_blank" rel="noopener" aria-label="Telegram">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>
+    </a>
+    <a href="https://max.ru/u/gruztaxi" class="floating-btn floating-btn--max" target="_blank" rel="noopener" aria-label="MAX">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 15v-4H8l4-7v4h3l-4 7z"/></svg>
+    </a>
+  </div>
+
+  <script src="script.js"></script>
+  <script src="game.js"></script>
+</body>
+</html>
